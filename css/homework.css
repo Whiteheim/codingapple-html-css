@@ -1,0 +1,65 @@
+.container{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blog-content{
+    width: 80%;
+    height: 200px;
+    float: left;
+}
+
+.blog-profile{
+    width: 50px;
+    border-radius: 50%;
+    float: left;
+}
+
+.blog-name {
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.blog-name p{
+    font-size: 12px;
+}
+
+.blog-content p{
+    font-size: 13px;
+    color: gray;
+}
+
+.blog-image{
+   width: 20%;
+   height: 200px;
+   float: left;
+}
+
+/* parents>children : 직계자식만 지정 */
+.navbar li {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbar a {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    text-decoration: none;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    text-align: center;
+}

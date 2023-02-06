@@ -1,0 +1,31 @@
+.header {
+    width: 100%;
+    height: 50px;
+    background: aqua;
+}
+
+.left-menu{
+    width: 20%;
+    height: 400px;
+    background: cornflowerblue;
+    display: inline-block;
+    vertical-align: top;
+}
+/* inline-block : 어울림 설정 , 자기 크기만큼 자리 차지함
+                  공백 제거 필요, 주변에 글이 있으면 baseline위에 올라가려고 해서 이상해짐
+                               -> vertical-align으로 조정*/
+
+
+.right {
+    width: 80%;
+    height: 400px;
+    background: coral;
+    display: inline-block;
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background: gray;
+   
+}
