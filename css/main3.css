@@ -1,0 +1,107 @@
+div {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+/* --> 기본적으로 설정해두면 편함 */
+
+
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/shoes.jpg);
+    /* background-image: url(../img/shoes.jpg), url(), url(); 
+            => 배경 이미지 여러개 겹치기*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /* filter: brightness(120%);  글자까지 밝기조절됨*/
+    padding: 1px;
+    text-align: center;
+    position: relative;
+
+}
+
+.main-title {
+    color: white;
+    font-size: 40px;
+    /* margin-top: 300px; */
+    /* margin collapse : 박스 두개의 top부분이 겹쳐져 있으면 마진이 하나로 합쳐짐 */
+    /* 부모 태그에 padding으로 1px 주면 해결 */
+    margin-top: 100px;
+}
+
+.main-content {
+    color:whitesmoke;
+}
+
+.main-button {
+    padding: 15px;
+    font-size: 20px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    /* relative 속성 부여 시 원래 위치를 기준으로 위치 설정 가능 */
+    /* float처럼 공중에 뜸 */
+    position: relative;
+    /* static : 위치 이동 x 
+       fixed : 현재 화면 기준으로 위치 고정 
+       absolute : 부모(relative 속성을 가진)를 기준으로 상대적으로 움직임*/
+    /* left:0;
+    right: 0;
+    margin: auto;
+    width: 150px; 
+    -------------> absolute 속성에서 가운데 정렬 하는 법*/
+    z-index: 5;
+}
+
+/* .description-box {
+    text-align: center;
+    background-color:aliceblue;
+    width: 450px;
+    height: 200px;
+    position: absolute;
+    bottom: -160px;
+    left:0;
+    right: 0;
+    margin:auto;
+}
+
+.description-title {
+    font-size: 17px;
+    position: relative;
+    top: 10px;
+}
+
+.description-content {
+    font-size: 17px;
+    margin: 30px;
+
+} */
+
+.explain-box {
+    /* width: 700px; */
+    width: 80%;
+    max-width: 600px;  /* pc화면의 비율로 조정하면 너무 커지기 때문에 width에 제한을 줌*/
+    /* width는 box자체가 아닌 content영역 (글 작성하는 부분) 의 길이만 영향을 줌, padding을 설정하면
+        max-width보다 커질 수 있음 */
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #eee;
+    position: relative;
+    top: -40px;
+    /* z-index: 1;  수치가 높을수록 제일 앞에 나옴 */
+    box-sizing: border-box;
+    /* box-sizing을 content, padding, border까지 모두 포함하게 됨 */
+}
+
+input[type=text] {
+    padding: 10px;
+    font-size: 20px;
+    border: 1x solid black;
+    border-radius: 5px;
+}
