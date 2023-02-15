@@ -1,9 +1,24 @@
+/* 커스텀 폰트를 css에서 사용가능하도록 설정 */
+/* 한글 폰트는 용량이 너무 크기 때문에 최대 2가지만 사용
+    -> .woff 확장자 : 웹용으로 만들어져서 용량이 작음 */
+/* google fonts에서 link나 import로 사용하면 트래픽 절약 가능 */
+@font-face {
+    font-family: '작명';
+    src: url(../font/NanumMyeongjo-Regular.ttf);
+}
+/* 폰트가 너무 확대되어 거칠어 보일 때 
+    -> transform: rotate(0.03deg) 
+    약간 회전시켜서 부드럽게 보이도록 처리함 */
 div {
     box-sizing: border-box;
 }
 
 body {
     margin: 0px;
+    /* font 적용 방법 :
+            여러 font를 입력하면 오류가 났을 때 대체하는 font 지정 가능 */
+    /* font-family: 'nanumsquare','gulim', 'dotum', 'arial'; */
+    font-family: '작명';
 }
 /* --> 기본적으로 설정해두면 편함 */
 
@@ -105,3 +120,76 @@ input[type=text] {
     border: 1x solid black;
     border-radius: 5px;
 }
+
+/* .flex-container {
+    display: flex;          div들을 가로로 정렬
+    /* flex-direction: column;  div들을 세로 정렬 (기본값 row)
+    /* justify-content: center; div들 좌우간격 정렬 / 가운데 오른쪽 왼쪽 3분할 등 가능 
+    /* flex-wrap: nowrap;       div박스들의 크기가 한 줄 이상일 때, 자리가 부족한 박스를 다음줄로 미뤄줌
+    /* align-items: center;     div들의 상하 정렬
+    background-color: rgb(224, 101, 169);
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item {
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    /* flex-grow: 2             div박스의 배율 설정 (다른 flex-grow속성을 가진 div와 비교하여 크기조절
+    color: white;
+}
+
+.flex-logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.flex-menu {
+    font-size: 18px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    height: 40px;
+} */
+
+.nav-container {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    padding: 5px;
+}
+
+.nav-item {
+    margin-right: 10px;
+}
+
+.test {
+    width: 100px;
+    height: 50px;
+    background-color: gray;
+}
+
+/* 단위 종류 
+    vw (Viewpoint Width) : 현재 브라우저의 너비에 비례
+    vh (Viewpoint hieght) : 현재 브라우저의 높이에 비례 
+    rem : 기본 html 폰트 사이즈의 10배 (기본 16px) 
+    em : 설정해둔 폰트 사이즈에 비례 */
+
+/* Media Query 문법 / css 최하단에 작성 / 중복 작성 가능 
+    큰사이즈 -> 작은사이즈 순서로 작성 
+    break point는 최대 3개 사용, 관리 용이 */
+@media screen and (max-width: 500px) {
+                    /* 브라우저 폭이 500px 이하일 때 아래의 css를 적용 */
+    .main-title {
+        font-size: 20px;
+    }
+
+    .nav-item {
+        font-size: 12px;
+    }
+}
+
+/* 표준 규격
+    1200px : PC
+    768px : Tablet
+    576px : Mobile */

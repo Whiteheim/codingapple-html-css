@@ -2,17 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- <meta name="description" content="검색시 제목으로 뜨는 글귀">
+    <meta name="keywords" content="검색에 도움을 주는 키워드"> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/main3.css">
     <link rel="stylesheet" href="css/nomalize.css">
-
+    <link rel="icon" href="아이콘경로.ico" type="image/x-icon">
+    <!-- 웹사이트 제목 옆의 아이콘 설정 
+        32x32 사이즈, png도 가능, 
+        바탕화면에 바로가기 했을 시 아이콘 커스텀 
+        - favicon generator검색해서 사용 --> 
+    <meta property="og:image" content="/이미지경로.확장자">
+    <meta property="og:description" content="사이트 설명">
+    <meta property="og:title" content="사이트 제목"> 
+    <!-- facebook이 만든 og 메타 태그, 링크 공유시 사진과 사이트 이름, 설명등을 띄울수 있게 해줌 -->
 </head>
 <body style="margin: 0px;">
-    
+   <!-- <div class="flex-container">
+    <div class="flex-item flex-logo" style="flex-grow: 1;">Logo</div>
+    <div class="flex-item" style="flex-grow: 2;"></div>
+    <div class="flex-item flex-menu" style="flex-grow: 1;">products</div>
+    <div class="flex-item flex-menu" style="flex-grow: 1;">services</div>
+   </div> -->
+
+   <nav class="nav-container">
+        <div class="nav-item">ShooShop</div>
+        <div style="flex-grow: 1;"></div>
+        <div class="nav-item">Products</div>
+        <div class="nav-item">Services</div>
+   </nav>
+   
+
+
     <div class="main-background">
-        <h4 class="main-title">Buy Our Shoes!</h4>
+        <h4 class="main-title">Buy Our Shoes! Now On Sale</h4>
         <p class="main-content">문구 대충 대충 문구 이거저거 대충 신발사러 오라는 글</p><br>
         <button class="main-button">구매하기</button>
         <!-- <div class="description-box">
@@ -33,7 +58,6 @@
     </div>
     
     <!-- <br>
-
     <div class="explain-box" style="padding:50px">
         <h4>How to design our shoes</h5>
         <p>Lorm ipsum dolor sit amet, consectetur adopisicing elit. 
@@ -47,5 +71,6 @@
         <input type="email">
         <button type="submit">전송</button>
     </form>
+
 </body>
 </html>

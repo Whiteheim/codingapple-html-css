@@ -1,0 +1,145 @@
+/* .table-practice {
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+    width: 100%;
+}
+
+tr {
+    border-bottom: 1px solid black;
+} */
+
+
+/* vertical-align : 
+    1. inline/inline-block 요소간의 세로정렬시 사용 */
+
+/* display: inline 
+    - 항상 옆으로 채워지는 폭과 너비가 없는 요소
+        ex) <span> 태그 */
+
+/* img {
+    margin: auto;
+}
+p {
+    font-size: 8px;
+} */
+
+body {
+    margin: 0px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.cart-background {
+    width: 100%;
+    background-color: #c2d3de;
+    padding: 30px;
+}
+
+.cart-table {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* td, th {
+    border: 1px solid black;
+
+} */
+
+.cart-table td, .cart-table th {
+    padding: 15px;
+    border-bottom: 1px solid #c2d3de;
+}
+
+/* .cell-long {
+    width: 700px;
+} */
+
+.cart-table th:nth-child(2) {
+    width: 400px;
+}
+
+.btn {
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;   
+    background-color: coral;
+    color: white;
+    cursor: pointer;
+}
+
+/* pesudo-class */
+
+.btn:hover {
+    background-color: chocolate;
+}
+
+.btn:focus {
+    background-color: grey;
+}
+
+.btn:active { /* 버튼 클릭한 상태 */
+    background-color: brown;
+    border: 2px solid black;
+}
+
+/* hover , focus, active의 순서대로 작성해야
+    제대로 작동함 */
+.input-test {
+    font-size: 20px;
+}
+
+.input-test:focus {
+    border: 2px solid red;
+}
+
+.custom-link {
+    text-decoration: none;
+}
+
+.custom-link:link {
+    color: skyblue;
+}
+
+.custom-link:visited {
+    color:black
+}
+
+/* OOCSS, BEM */
+.f-small {
+    font-size: 12px;
+}
+
+.f-mid {
+    font-size: 16px;
+}
+
+.f-lg {
+    font-size: 20px;
+}
+/* --> Utility Class : 미리 여러개 만들어놓고 사용
+        -> bootstrap*/
+.main-btn {     /* 뼈대용 class */
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.bg-red {       /* 각각의 class */
+    background: red;
+}
+
+.bg-blue {
+    background: blue;
+}
