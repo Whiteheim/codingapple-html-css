@@ -18,6 +18,11 @@
     <meta property="og:description" content="사이트 설명">
     <meta property="og:title" content="사이트 제목"> 
     <!-- facebook이 만든 og 메타 태그, 링크 공유시 사진과 사이트 이름, 설명등을 띄울수 있게 해줌 -->
+    <!-- [if lt IE 10]> 
+    <link rel="stylesheet" href="css/ie.css" type="text/css" />
+    <![endif] -->   <!--조건부 css 적용 -->
+
+    <link rel="stylesheet" href="font awsome/css/all.min.css" />
 </head>
 <body style="margin: 0px;">
    <!-- <div class="flex-container">
@@ -30,10 +35,11 @@
    <nav class="nav-container">
         <div class="nav-item">ShooShop</div>
         <div style="flex-grow: 1;"></div>
-        <div class="nav-item">Products</div>
-        <div class="nav-item">Services</div>
+        <div class="nav-item nav-products">Products</div>
+        <div class="nav-item nav-services">Services</div>
    </nav>
    
+   <div style="clear:both"></div>
 
 
     <div class="main-background">

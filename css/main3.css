@@ -163,11 +163,34 @@ input[type=text] {
     margin-right: 10px;
 }
 
-.test {
+/* IE9 버전 호환용 */
+/* .nav-container {
+    height: 40px;
+    align-items: center;
+    padding: 5px;
+}
+.nav-item {
+    float: left;
+    margin-right: 10px;
+    margin-top: 13px;
+    position: relative;
+}
+
+.nav-products {
+    position: absolute;
+    margin-left: 85%;
+}
+
+.nav-services {
+    position: absolute;
+    margin-left: 93%;
+} */
+
+/* .test {
     width: 100px;
     height: 50px;
     background-color: gray;
-}
+} */
 
 /* 단위 종류 
     vw (Viewpoint Width) : 현재 브라우저의 너비에 비례
